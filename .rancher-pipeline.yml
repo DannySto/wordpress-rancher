@@ -3,6 +3,7 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./wp-mysql-secret.yaml
+      
 - name: Deploy step1
   steps:
   - applyYamlConfig:
