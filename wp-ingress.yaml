@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: wordpress
+  namespace: p-5pjgs-pipeline
+spec:
+  rules:
+  - host: wordpress.itvcloud.nl
+    http:
+      paths:
+      - backend:
+          serviceName: wordpress
+          servicePort: 80
+status:
+  loadBalancer:
+    ingress:
+    - ip: 3.120.36.204
