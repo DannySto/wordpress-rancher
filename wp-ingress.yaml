@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: wordpress
-  namespace: p-5pjgs-pipeline
+  namespace: wordpress
 spec:
   rules:
   - host: wordpress.itvcloud.nl

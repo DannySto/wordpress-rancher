@@ -3,7 +3,7 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./wp-mysql-secret.yaml
-      
+
 - name: Deploy step1
   steps:
   - applyYamlConfig:
@@ -29,7 +29,7 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./wp-svc.yaml
-- name: Deploy worpress step3
+- name: Deploy worpress ingress
   steps:
   - applyYamlConfig:
       path: ./wp-ingress.yaml
