@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   labels:
     app: sonarqube
-  name: claim-wordpress
+  name: wp-pv-claim
   namespace: wordpress
 spec:
   accessModes:
