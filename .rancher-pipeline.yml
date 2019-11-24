@@ -4,23 +4,26 @@ stages:
   - applyYamlConfig:
       path: ./wp-mysql-secret.yaml
 
-- name: Deploy step1
-  steps:
-  - applyYamlConfig:
-      path: ./wp-mysql-pvc.yaml
+# - name: Deploy step1
+#   steps:
+#   - applyYamlConfig:
+#       path: ./wp-mysql-pvc.yaml
+
 - name: Deploy step2
   steps:
   - applyYamlConfig:
       path: ./wp-mysql-deploy.yaml
+
 - name: Deploy step3
   steps:
   - applyYamlConfig:
       path: ./wp-mysql-svc.yaml
 
-- name: Deploy worpress
-  steps:
-  - applyYamlConfig:
-      path: ./wp-pvc.yaml
+# - name: Deploy worpress
+#   steps:
+#   - applyYamlConfig:
+#       path: ./wp-pvc.yaml
+
 - name: Deploy worpress step2
   steps:
   - applyYamlConfig:
