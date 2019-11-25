@@ -11,7 +11,4 @@ spec:
       - backend:
           serviceName: wordpress
           servicePort: 80
-status:
-  loadBalancer:
-    ingress:
-    - ip: 3.120.36.204
+
